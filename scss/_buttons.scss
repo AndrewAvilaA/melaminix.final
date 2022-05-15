@@ -1,0 +1,16 @@
+.btn-primary{
+    color: $color-brown-dark;
+    background-color: $color-aqua;
+    border-color: $color-aqua;
+    box-shadow: $box-shadow;
+    &:hover{
+        @include buttonColorsPsClass;
+    }
+    &:focus{
+        @include buttonColorsPsClass;
+        box-shadow: 0 0 0 .25rem $color-aqua;
+    }
+    &:active{
+        @include buttonColorsPsClass;
+    }
+}
